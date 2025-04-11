@@ -1,0 +1,11 @@
+yaml
+
+service:
+- type: web
+  name: fastapi
+  env: python
+  plan: free
+  buildCommand: ""
+  buildCommand: uvicorn main:app --host=0.0.0.0 --port=10000
+  autoDeploy: true
+  
